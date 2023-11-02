@@ -1,0 +1,192 @@
+
+<!--<script src="../about/about.component.ts"></script>-->
+<div class="header-outer">
+    <div class="header-inner">
+
+        <!--     App Header&ndash;&gt;-->
+        <app-header></app-header>
+        <!--    App Header-->
+
+    </div>
+</div>
+<!--carousel-section-->
+
+<owl-carousel-o [options]="customOptions" class="custom-owl-carousel">
+
+    <ng-container *ngFor="let slide of bannerSlidesStore">
+        <ng-template carouselSlide>
+
+            <div class="slide-image-outer">
+                <div class="slide-image-inner" [style.background-image]="'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(' + slide.imageLink + ')'">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 items">
+                                <div class="left-side-elements">
+                                    <h1 class="title  ">Contact</h1>
+                                </div>
+                                <div class="right-side-elements">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <!--                <a href=""><button><i class="fa-solid fa-circle-play"></i></button></a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner-devide">  </div>
+            </div>
+        </ng-template>
+    </ng-container>
+
+</owl-carousel-o>
+
+<!--carousel-section-->
+
+<div class="top-texts">
+
+    <div class="contactus"><span>CONTACT US</span></div>
+    <div class="title"><h1>HAVE A PROJECT?</h1></div>
+    <div class="descrption">
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+    </div>
+
+</div>
+
+
+<div class="form-outer">
+    <div class="form-inner">
+
+        <form class="row g-3">
+
+            <div class="col-md-6">
+                <label for="name" class="form-label"></label>
+                <input type="email" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label"></label>
+                <input type="password" class="form-control" id="email" placeholder="Your Email">
+            </div>
+
+
+            <div class="col-12">
+                <label for="subject" class="form-label"></label>
+                <input type="text" class="form-control" id="subject" placeholder="Subject">
+            </div>
+
+
+            <div class="col-12">
+                <label for="inputMessage" class="form-label"></label>
+                <input type="text" class="form-control" id="inputMessage"  placeholder="Message" style="height: 150px">
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!--footer-section-->
+<div class="footer-outer">
+    <div class="footer-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-items">
+                        <div class="avo">
+                            <h5 class="footer-title">avo</h5>
+                            <p>Far far away, behind <br>the word mountains, <br>far from the countries.</p>
+                            <div class="social-links" appAnimation>
+                                <div class="icon-outer animate__animated animate__fadeInUp animate__delay-1s"><i class="fa-brands fa-twitter"></i></div>
+                                <div class="icon-outer animate__animated animate__fadeInUp animate__delay-1s"><i class="fa-brands fa-facebook-f"></i></div>
+                                <div class="icon-outer animate__animated animate__fadeInUp animate__delay-1s"><i class="fa-brands fa-instagram"></i></div>
+                            </div>
+                        </div>
+                        <div class="community">
+                            <h5 class="footer-title">Community</h5>
+                            <div class="footer-links">
+                                <div><i class="fa-solid fa-angle-right"></i> Project</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Team</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Reviews</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Faqs</div>
+                            </div>
+                        </div>
+                        <div class="about-us">
+                            <h5 class="footer-title">About Us</h5>
+                            <div class="footer-links">
+                                <div><i class="fa-solid fa-angle-right"></i> Our Story</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Meet The team</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Careers</div>
+                            </div>
+                        </div>
+                        <div class="company">
+                            <h5 class="footer-title">Company</h5>
+                            <div class="footer-links">
+                                <div><i class="fa-solid fa-angle-right"></i> About Us</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Press</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Contact</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Careers</div>
+                            </div>
+                        </div>
+                        <div class="have-a-question">
+                            <h5 class="footer-title">Have a Question?</h5>
+                            <div class="contact">
+                                <div class="icon"><i class="fa-solid fa-map"></i></div>
+                                <div class="sentence"> 203 Fake St. <br> Mountain View, <br>San Francisco, <br>California, USA</div>
+                            </div>
+                            <div class="contact">
+                                <div class="icon"><i class="fa-solid fa-phone"></i>	</div>
+                                <div class="sentence">+2 392 3929 210</div>
+                            </div>
+                            <div class="contact">
+                                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="sentence">info@yourdomain.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">Copyright &copy; All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by <span>Colorlib</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-section-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

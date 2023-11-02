@@ -1,0 +1,262 @@
+
+<div class="header-outer">
+    <div class="header-inner">
+
+        <!--     App Header&ndash;&gt;-->
+        <app-header></app-header>
+        <!--    App Header-->
+
+    </div>
+</div>
+
+<!--carousel-section-->
+
+<owl-carousel-o [options]="customOptions" class="custom-owl-carousel">
+
+    <ng-container *ngFor="let slide of bannerSlidesStore">
+        <ng-template carouselSlide>
+
+            <div class="slide-image-outer">
+                <div class="slide-image-inner" [style.background-image]="'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(' + slide.imageLink + ')'">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 items">
+
+                                <div class="left-side-elements">
+                                    <h1 class="title">Work</h1>
+                                </div>
+                                <div class="right-side-elements">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner-devide">  </div>
+
+            </div>
+        </ng-template>
+    </ng-container>
+
+</owl-carousel-o>
+
+<!--carousel-section-->
+
+
+
+<!--title-section-->
+
+<div class="about-section-devider">
+  <div class="bars">
+    <div class="left-bar"></div>
+    <div class="right-bar"></div>
+  </div>
+</div>
+
+<!--works-section-->
+<div class="works-section-outer">
+  <div class="works-section-inner">
+    <div class="container">
+      <div class="row" appAnimation>
+        <div class="col-12 title text-center">
+          <h1 class="animate__animated animate__fadeInUp">Our Work</h1>
+        </div>
+      </div>
+      <div class="row work-outer animate__delay-1s" appAnimation >
+        <div class="col-12 col-lg-5 image">
+          <div class="item-image image-01"></div>
+        </div>
+        <div class="col-12 col-lg-7 description animate__animated animate__fadeInUp animate__slow  work-1 " >
+          <p class="work-title">web design</p>
+          <h1 class="work-name">Cassette tape</h1>
+          <p class="work-description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+            blind texts.</p>
+          <div class="user">
+            <div class="user-image"><img src="https://preview.colorlib.com/theme/avo/images/person_1.jpg.webp" alt=""></div>
+            <div class="user-description">
+              <p>Jamie Johnson</p>
+              <p class="website-name">avo.com</p>
+            </div>
+          </div>
+          <button class="btn-primary">view portfolio</button>
+        </div>
+      </div>
+      <div class="row work-outer work-outer-2 animate__delay-1s" appAnimation>
+        <div class="col-12 col-lg-7 description animate__animated animate__fadeInUp animate__slow work-2" >
+          <p class="work-title">application</p>
+          <h1 class="work-name">miniwall clock</h1>
+          <p class="work-description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+            blind texts.</p>
+          <div class="user">
+            <div class="user-image"><img src="https://preview.colorlib.com/theme/avo/images/person_2.jpg.webp" alt=""></div>
+            <div class="user-description">
+              <p>Jamie Johnson</p>
+              <p class="website-name">avo.com</p>
+            </div>
+          </div>
+          <button class="btn-primary">view portfolio</button>
+        </div>
+        <div class="col-12 col-lg-5 image">
+          <div class="item-image image-02"></div>
+        </div>
+      </div>
+      <div class="row work-outer work-outer-3 animate__delay-1s" appAnimation>
+        <div class="col-12 col-lg-5 image">
+          <div class="item-image image-03"></div>
+        </div>
+        <div class="col-12 col-lg-7 description animate__animated animate__fadeInUp animate__slow work-3">
+          <p class="work-title">UI/UX design</p>
+          <h1 class="work-name">avo portfolio agency</h1>
+          <p class="work-description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+            blind texts.</p>
+          <div class="user">
+            <div class="user-image"><img src="https://preview.colorlib.com/theme/avo/images/person_3.jpg.webp" alt=""></div>
+            <div class="user-description">
+              <p>Jamie Johnson</p>
+              <p class="website-name">avo.com</p>
+            </div>
+          </div>
+          <button class="btn-primary">view portfolio</button>
+        </div>
+      </div>
+      <div class="row work-outer work-outer-4 animate__delay-1s" appAnimation>
+        <div class="col-12 col-lg-7 description animate__animated animate__fadeInUp animate__slow work-4">
+          <p class="work-title">web development</p>
+          <h1 class="work-name">hand writing</h1>
+          <p class="work-description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+            blind texts.</p>
+          <div class="user">
+            <div class="user-image"><img src="https://preview.colorlib.com/theme/avo/images/person_3.jpg.webp" alt=""></div>
+            <div class="user-description">
+              <p>Jamie Johnson</p>
+              <p class="website-name">avo.com</p>
+            </div>
+          </div>
+          <button class="btn-primary">view portfolio</button>
+        </div>
+        <div class="col-12 col-lg-5 image">
+          <div class="item-image image-04"></div>
+        </div>
+      </div>
+      <div class="row work-outer work-outer-5 animate__delay-1s" appAnimation>
+        <div class="col-12 col-lg-5 image">
+          <div class="item-image image-05"></div>
+        </div>
+        <div class="col-12 col-lg-7 description animate__animated animate__fadeInUp animate__slow work-5">
+          <p class="work-title">illustration</p>
+          <h1 class="work-name">keyboard</h1>
+          <p class="work-description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+            blind texts.</p>
+          <div class="user">
+            <div class="user-image"><img src="https://preview.colorlib.com/theme/avo/images/person_2.jpg.webp" alt=""></div>
+            <div class="user-description">
+              <p>Jamie Johnson</p>
+              <p class="website-name">avo.com</p>
+            </div>
+          </div>
+          <button class="btn-primary">view portfolio</button>
+        </div>
+      </div>
+      <div class="row work-outer work-outer-6 animate__delay-1s" appAnimation>
+        <div class="col-12 col-lg-7 description animate__animated animate__fadeInUp animate__slow work-6">
+          <p class="work-title">web development</p>
+          <h1 class="work-name">spiral</h1>
+          <p class="work-description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+            blind texts.</p>
+          <div class="user">
+            <div class="user-image"><img src="https://preview.colorlib.com/theme/avo/images/person_3.jpg.webp" alt=""></div>
+            <div class="user-description">
+              <p>Jamie Johnson</p>
+              <p class="website-name">avo.com</p>
+            </div>
+          </div>
+          <button class="btn">view portfolio</button>
+        </div>
+        <div class="col-12 col-lg-5 image">
+          <div class="item-image image-06"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--works-section-->
+
+
+
+
+<!--footer-section-->
+<div class="footer-outer">
+    <div class="footer-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-items">
+                        <div class="avo">
+                            <h5 class="footer-title">avo</h5>
+                            <p>Far far away, behind <br>the word mountains, <br>far from the countries.</p>
+                            <div class="social-links" appAnimation>
+                                <div class="icon-outer animate__animated animate__fadeInUp animate__delay-1s"><i class="fa-brands fa-twitter"></i></div>
+                                <div class="icon-outer animate__animated animate__fadeInUp animate__delay-1s"><i class="fa-brands fa-facebook-f"></i></div>
+                                <div class="icon-outer animate__animated animate__fadeInUp animate__delay-1s"><i class="fa-brands fa-instagram"></i></div>
+                            </div>
+                        </div>
+                        <div class="community">
+                            <h5 class="footer-title">Community</h5>
+                            <div class="footer-links">
+                                <div><i class="fa-solid fa-angle-right"></i> Project</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Team</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Reviews</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Faqs</div>
+                            </div>
+                        </div>
+                        <div class="about-us">
+                            <h5 class="footer-title">About Us</h5>
+                            <div class="footer-links">
+                                <div><i class="fa-solid fa-angle-right"></i> Our Story</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Meet The team</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Careers</div>
+                            </div>
+                        </div>
+                        <div class="company">
+                            <h5 class="footer-title">Company</h5>
+                            <div class="footer-links">
+                                <div><i class="fa-solid fa-angle-right"></i> About Us</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Press</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Contact</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Careers</div>
+                            </div>
+                        </div>
+                        <div class="have-a-question">
+                            <h5 class="footer-title">Have a Question?</h5>
+                            <div class="contact">
+                                <div class="icon"><i class="fa-solid fa-map"></i></div>
+                                <div class="sentence"> 203 Fake St. <br> Mountain View, <br>San Francisco, <br>California, USA</div>
+                            </div>
+                            <div class="contact">
+                                <div class="icon"><i class="fa-solid fa-phone"></i>	</div>
+                                <div class="sentence">+2 392 3929 210</div>
+                            </div>
+                            <div class="contact">
+                                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="sentence">info@yourdomain.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">Copyright &copy; All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by <span>Colorlib</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+footer-section
+
+
+

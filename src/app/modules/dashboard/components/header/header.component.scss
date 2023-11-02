@@ -1,0 +1,131 @@
+
+.nav-outer {
+
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  .nav-inner {
+    width: 100%;
+    height: 100%;
+
+    .container {
+      position: sticky;
+      .navbar{
+
+        z-index: 5000!important;
+        border: 2px solid red;
+
+        .navbar-toggler{
+          position: sticky;
+
+          span{
+            color: rgba(0, 0, 0, 0.5)!important;
+            text-transform: uppercase;
+            font-size: 16px!important;
+          }
+        }
+      }
+
+
+      .navbar-brand {
+        //margin-top: 20px;
+        color: #FFFFFF;
+        font-size: 25px;
+        span {
+          color: #D1002c;
+          letter-spacing: 0!important;
+        }
+      }
+
+      .navbar-nav {
+        .nav-item {
+
+          .nav-link{
+            color: #FFFFFF99;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 13px;
+            //margin-top: 20px;
+            margin-right:5px ;
+
+            &:hover{
+              color: #D1002c;
+            }
+          }
+
+          .active-link{
+            color: #D1002c!important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 998px) {
+
+  .container {
+    padding: 0 150px;
+
+    .navbar-nav {
+      .nav-item {
+        padding: 0 15px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 998px) {
+
+  .nav-outer {
+    .nav-inner {
+      .navbar {
+
+
+        .navbar-brand{
+          color: black;
+
+          span{
+            color: #D1002c!important;
+          }
+        }
+
+        background-color: #FFFFFF;
+        .navbar-toggler {
+          border-radius: 0 !important;
+          border: none !important;
+          outline: none !important;
+          span{
+            color: rgba(0, 0, 0, 0.5)!important;
+            text-transform: uppercase;
+            font-size: 16px!important;
+          }
+        }
+
+        .navbar-nav{
+          .nav-item{
+            .nav-link{
+              color: black;
+              text-transform: uppercase;
+              font-size: 13px;
+
+            }
+
+            .active-link{
+              color: #D1002c!important;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.hovered{
+  color: #D1002c!important;
+}

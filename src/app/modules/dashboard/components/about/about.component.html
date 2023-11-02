@@ -1,0 +1,284 @@
+
+<div class="header-outer">
+  <div class="header-inner">
+
+    <!--     App Header&ndash;&gt;-->
+    <app-header></app-header>
+    <!--    App Header-->
+
+  </div>
+</div>
+
+<!--carousel-section-->
+
+<owl-carousel-o [options]="customOptions" class="custom-owl-carousel">
+
+  <ng-container *ngFor="let slide of bannerSlidesStore">
+    <ng-template carouselSlide>
+
+
+      <div class="slide-image-outer">
+        <div class="slide-image-inner" [style.background-image]="'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(' + slide.imageLink + ')'">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 items">
+                <div class="left-side-elements">
+                  <h1 class="title  ">ABOUT US</h1>
+                </div>
+                <div class="right-side-elements">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner-devide">  </div>
+      </div>
+    </ng-template>
+  </ng-container>
+
+</owl-carousel-o>
+
+<!--carousel-section-->
+
+
+
+<!--ABOUT US SECTION-->
+<div class="about-us-section-outer">
+  <div class="about-us-section-inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" appAnimation>
+          <h1 class="title-name animate__animated animate__fadeInUp ">ABOUT US</h1>
+        </div>
+      </div>
+      <div class="content-outer">
+        <div class="row" appAnimation>
+          <div class="col-12 service-items">
+            <div class="items-inner animate__animated animate__fadeInUp animate__delay-1s" *ngFor="let item of aboutSectionItems">
+              <img src="{{item.icon}}" alt="{{item.alt}}" width="60px">
+              <p class="service-description">{{item.serviceName}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center service-details animate__animated animate__fadeInUp animate__delay-1s" appAnimation>
+          <div class="col-12 col-lg-4 left" >
+            <div class="service-inner ">
+              <h2 class="text-end">Welcome to AVO A Personal Porfolio Web Agency</h2>
+              <p class="text-end">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                language ocean. A small
+                river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                paradisematic
+                country, in which roasted parts of sentences fly into your mouth.</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 image">
+            <div class="service-inner"></div>
+          </div>
+          <div class="col-12 col-lg-4 right">
+            <div class="service-inner">
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+                ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It
+                is
+                a
+                paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+              <button class="btn btn-play">View all projects</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center" appAnimation>
+          <div class="inner-items"></div>
+          <div class="col-12 col-lg-4 providing-service ">
+            <div class="providing-service-inner animate__animated animate__fadeInUp animate__delay-2s">
+              <div class="top"><span>01</span><h4>Search Engine Optimization</h4></div>
+              <div class="bottom">
+                <p>Far far away, behind the word mountains</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 providing-service ">
+            <div class="providing-service-inner animate__animated animate__fadeInUp animate__delay-2s">
+              <div class="top"><span>02</span><h4>Search Engine Optimization</h4></div>
+              <div class="bottom">
+                <p>Far far away, behind the word mountains</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 providing-service ">
+            <div class="providing-service-inner animate__animated animate__fadeInUp animate__delay-2s">
+              <div class="top"><span>03</span><h4>Search Engine Optimization</h4></div>
+              <div class="bottom">
+                <p>Far far away, behind the word mountains</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-------project estimate------->
+<div class="project-estimate-outer" >
+  <div class="project-estimate-inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 project-estimate-inner-image">
+          <div class="row" appAnimation>
+            <div class=" col-12 col-lg-8 inner-items ">
+              <p class="get-started animate__animated animate__fadeInUp animate__delay-1s">get stated</p>
+              <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Fill in the brief and get the project estimate</h3>
+              <p class="desc animate__animated animate__fadeInUp animate__delay-1s">'far far away behind the world mountains, far from the countries Vokalia and Constantia,
+                there live the blind texts.</p>
+              <button class="btn btn-play animate__animated animate__fadeInUp animate__delay-1s">Get Started</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------project estimate------->
+
+
+
+
+<!--testimonial-section-->
+<div class="testimonial-outer" appAnimation>
+  <div class="testimonial-inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center title animate__animated animate__fadeInUp animate__delay-1s">Clients Says About Us?</h1>
+
+        </div>
+        <div class="col-12">
+          <div class="testimonial-carousel-outer">
+            <owl-carousel-o [options]="testimonialOption">
+              <ng-container *ngFor="let testimonial of testimonials">
+                <ng-template carouselSlide>
+                  <div class="col-12">
+                    <div class="testimonial-box-outer">
+                      <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+
+                      <div class="testimonial-box-inner">
+                        <div class="description">{{testimonial.description}}</div>
+                        <div class="user-section">
+                          <div class="image">
+                            <img [src]="testimonial.image" alt="">
+                          </div>
+                          <div class="details ">
+                            <div class="name">{{testimonial.name}}</div>
+                            <div class="position">{{testimonial.position}}</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              </ng-container>
+            </owl-carousel-o>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--testimonial-section-->
+
+
+
+
+<div class="about-section-devider">
+  <div class="bars">
+    <div class="left-bar"></div>
+    <div class="right-bar"></div>
+  </div>
+</div>
+
+
+
+<!--footer-section-->
+<div class="footer-outer">
+  <div class="footer-inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-items">
+            <div class="avo">
+              <h5 class="footer-title">avo</h5>
+              <p>Far far away, behind <br>the word mountains, <br>far from the countries.</p>
+              <div class="social-links" appAnimation>
+                <div class="icon-outer animate__animated animate__fadeInUp animate__delay-1s"><i class="fa-brands fa-twitter"></i></div>
+                <div class="icon-outer animate__animated animate__fadeInUp animate__delay-1s"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="icon-outer animate__animated animate__fadeInUp animate__delay-1s"><i class="fa-brands fa-instagram"></i></div>
+              </div>
+            </div>
+            <div class="community">
+              <h5 class="footer-title">Community</h5>
+              <div class="footer-links">
+                <div><i class="fa-solid fa-angle-right"></i> Project</div>
+                <div><i class="fa-solid fa-angle-right"></i> Team</div>
+                <div><i class="fa-solid fa-angle-right"></i> Reviews</div>
+                <div><i class="fa-solid fa-angle-right"></i> Faqs</div>
+              </div>
+            </div>
+            <div class="about-us">
+              <h5 class="footer-title">About Us</h5>
+              <div class="footer-links">
+                <div><i class="fa-solid fa-angle-right"></i> Our Story</div>
+                <div><i class="fa-solid fa-angle-right"></i> Meet The team</div>
+                <div><i class="fa-solid fa-angle-right"></i> Careers</div>
+              </div>
+            </div>
+            <div class="company">
+              <h5 class="footer-title">Company</h5>
+              <div class="footer-links">
+                <div><i class="fa-solid fa-angle-right"></i> About Us</div>
+                <div><i class="fa-solid fa-angle-right"></i> Press</div>
+                <div><i class="fa-solid fa-angle-right"></i> Contact</div>
+                <div><i class="fa-solid fa-angle-right"></i> Careers</div>
+              </div>
+            </div>
+            <div class="have-a-question">
+              <h5 class="footer-title">Have a Question?</h5>
+              <div class="contact">
+                <div class="icon"><i class="fa-solid fa-map"></i></div>
+                <div class="sentence"> 203 Fake St. <br> Mountain View, <br>San Francisco, <br>California, USA</div>
+              </div>
+              <div class="contact">
+                <div class="icon"><i class="fa-solid fa-phone"></i>	</div>
+                <div class="sentence">+2 392 3929 210</div>
+              </div>
+              <div class="contact">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="sentence">info@yourdomain.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p class="copyright">Copyright &copy; All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by <span>Colorlib</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+footer-section
+
+
+

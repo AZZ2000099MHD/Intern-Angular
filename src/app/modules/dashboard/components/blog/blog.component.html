@@ -1,0 +1,206 @@
+
+<div class="header-outer">
+    <div class="header-inner">
+
+        <!--     App Header&ndash;&gt;-->
+        <app-header></app-header>
+        <!--    App Header-->
+    </div>
+</div>
+
+<!--carousel-section-->
+
+<owl-carousel-o [options]="customOptions" class="custom-owl-carousel">
+
+    <ng-container *ngFor="let slide of bannerSlidesStore">
+        <ng-template carouselSlide>
+
+            <div class="slide-image-outer">
+                <div class="slide-image-inner" [style.background-image]="'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(' + slide.imageLink + ')'">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 items">
+
+                                <div class="left-side-elements">
+                                    <h1 class="title">Blog</h1>
+                                </div>
+                                <div class="right-side-elements">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-devide">  </div>
+       </div>
+        </ng-template>
+    </ng-container>
+</owl-carousel-o>
+
+<!--carousel-section-->
+
+
+
+<!--blogs-section-->
+<div class="blogs-section-outer" appAnimation>
+  <div class="blogs-section-inner">
+    <div class="container">
+      <div class="row">
+<!--        <h1 class="col-12 title animate__animated animate__fadeInUp animate__delay-1s">recent blog</h1>-->
+      </div>
+      <div class="row" appAnimation>
+        <div class="col-12 col-lg-3 blog-card-outer animate__animated animate__fadeInUp animate__delay-1s animate__slow" *ngFor="let blogItem of blogs">
+          <div class="blog-card-inner">
+            <div class="blog-card-header">
+              <h5>{{blogItem.header}}</h5>
+            </div>
+            <div class="blog-card-image">
+              <div class="image-outer" [style.background-image]="'url(' + blogItem.imageLink + ')'"></div>
+            </div>
+            <div class="blog-card-date-area">
+              <p class="date">{{blogItem.date}}</p>
+              <p class="user">{{blogItem.user}}</p>
+              <div class="comment-and-count">
+                <p><i class="fa-solid fa-comment"></i> {{blogItem.comments}}</p>
+              </div>
+
+            </div>
+            <div class="blog-card-sub-text">
+              <p>{{blogItem.subText}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <!--------Pagination------ -->
+      <div class="blog-pagination">
+          <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center d-flex justify-content-center">
+                  <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                      </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+      <!--------Pagination------ -->
+
+  </div>
+</div>
+
+
+<!--footer-section-->
+<div class="footer-outer">
+    <div class="footer-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-items">
+                        <div class="avo">
+                            <h5 class="footer-title">avo</h5>
+                            <p>Far far away, behind <br>the word mountains, <br>far from the countries.</p>
+                            <div class="social-links" appAnimation>
+                                <div class="icon-outer animate__animated animate__fadeInUp animate__delay-1s"><i class="fa-brands fa-twitter"></i></div>
+                                <div class="icon-outer animate__animated animate__fadeInUp animate__delay-1s"><i class="fa-brands fa-facebook-f"></i></div>
+                                <div class="icon-outer animate__animated animate__fadeInUp animate__delay-1s"><i class="fa-brands fa-instagram"></i></div>
+                            </div>
+                        </div>
+                        <div class="community">
+                            <h5 class="footer-title">Community</h5>
+                            <div class="footer-links">
+                                <div><i class="fa-solid fa-angle-right"></i> Project</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Team</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Reviews</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Faqs</div>
+                            </div>
+                        </div>
+                        <div class="about-us">
+                            <h5 class="footer-title">About Us</h5>
+                            <div class="footer-links">
+                                <div><i class="fa-solid fa-angle-right"></i> Our Story</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Meet The team</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Careers</div>
+                            </div>
+                        </div>
+                        <div class="company">
+                            <h5 class="footer-title">Company</h5>
+                            <div class="footer-links">
+                                <div><i class="fa-solid fa-angle-right"></i> About Us</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Press</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Contact</div>
+                                <div><i class="fa-solid fa-angle-right"></i> Careers</div>
+                            </div>
+                        </div>
+                        <div class="have-a-question">
+                            <h5 class="footer-title">Have a Question?</h5>
+                            <div class="contact">
+                                <div class="icon"><i class="fa-solid fa-map"></i></div>
+                                <div class="sentence"> 203 Fake St. <br> Mountain View, <br>San Francisco, <br>California, USA</div>
+                            </div>
+                            <div class="contact">
+                                <div class="icon"><i class="fa-solid fa-phone"></i>	</div>
+                                <div class="sentence">+2 392 3929 210</div>
+                            </div>
+                            <div class="contact">
+                                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="sentence">info@yourdomain.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">Copyright &copy; All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by <span>Colorlib</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+footer-section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
